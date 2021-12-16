@@ -1,0 +1,159 @@
+   #navigation{
+    text-align: center;    
+    margin: auto;
+    width: 100%;
+    display: flex;
+    height: 48px;
+    background-color: cornflowerblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navigation>div{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border: 1px solid cornflowerblue;
+    height: 46px;
+    color: rgb(28, 28, 160);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#a{
+    padding: 15px;
+    color: rgb(28, 28, 160);
+    
+}
+#a:hover{
+    text-decoration: none;
+}
+#navdes{
+    text-align: right;
+    justify-content: right;       
+    width: 100%;
+    display: flex;
+    height: 48px;
+    background-color: rgb(235, 235, 235);
+    color: rgb(28, 28, 160);
+    padding-right: 2%;
+}
+
+#b{
+    padding: 18px;
+    color: rgb(73, 73, 73);
+}
+#ser{
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;    
+    display: flex;         
+    font-size: 20px;    
+    margin-left: 70px;
+}
+#hed{
+color: tan;
+}
+i{
+    margin-top: 20x;
+}
+#blog{
+    line-height: 30px;
+    font-size: 20px;
+}
+#search{
+    padding: 40px;
+}
+#sign{
+    padding: 38px;
+}
+#sign:hover{
+    text-decoration: none;
+}
+.btn:hover {
+  background: #0b7dda;
+}
+#hed:hover{
+    color: sandybrown;
+}
+#ser1{
+    height: 38%;    
+    width: 340px;           
+    margin-left: 50px;
+    padding: 10px;
+    margin-top: 30px;
+}
+#t{
+    margin-top: 50px;
+    justify-content: space-around;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#na{
+    text-decoration: none;
+}
+#na:hover,#gift:hover,#offers:hover,#a,#b ,#b:hover{
+        text-decoration: underline;
+        
+        
+      }
+      #b:hover {
+        text-decoration: none;
+        
+      }
+      #ser1:hover {
+        text-decoration: none;
+        
+      }
+      #gift{
+       color: red;
+       font-weight: bold;
+       text-decoration: none;
+      }
+      #offers{
+       color: green;
+       font-weight: bold;
+       text-decoration: none;
+      }
+      #b,#location{
+    padding: 18px;
+    color: rgb(73, 73, 73);
+}
+#b:hover {
+        text-decoration: none;
+        
+      }
+      #location:hover{
+         color: blue;
+         cursor: pointer;
+         
+        }
+        #baa{
+            line-height: 30px;
+            text-decoration: none;
+            color: slategrey;
+        }
+        #baa:hover{
+            text-decoration: none;
+            color: rgb(60, 60, 211);
+        }
+        #home:hover{
+          text-decoration: none;
+        }
+        #searchbtn{
+            width: 100px;
+            height: 41px;            
+            margin-top: 30px;
+            border: 1px solid black;
+        }
+        #search{
+            padding: 10px;
+        }
+        #searchbtn:hover{
+         background-color: slategrey;
+        }
+        #search:hover{
+         color: white;
+        }
