@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="display_items.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main_box">
+        
+        <div class="side_bar">
+
+        </div>
+        <div class="nav_bar">
+            <div class="title">
+                <p id="page_title"></p>
+                <button id="submit_bag">View bag and Checkout</button>
+            </div>
+            <hr>
+            
+            <div>
+                Filter By: 
+                <div>
+                    Fragrance Name
+                    <select id="frag_name" onchange="filter_prods()">
+                        <option value="all">All</option>
+                    </select>      
+                </div>
+                <div>
+                    Fragrance Category
+                    <select id="frag_cat">
+                        
+                    </select>
+                </div>
+                <div>
+                    Sort By:
+                    <select id="sort_by" onchange="sort_prods()">
+                        <option value="low">Price Low to High</option>
+                        <option value="high">Price High to Low</option>
+                    </select>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="container">
+        </div>
+    </div>
+</body>
+</html>
+<script src="display_items.js"></script>

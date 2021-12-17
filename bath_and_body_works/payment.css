@@ -1,0 +1,100 @@
+.header{
+    height: 100px;
+    text-align: center;
+}
+
+.main_box{
+    display: flex;
+    margin:auto;
+    justify-content: space-around;
+}
+.main_box>div:nth-child(2)
+{
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.submit_form
+{
+    display: grid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.show_cart img{
+    width: 20%;
+    height: 20%;
+}
+
+.show_cart{
+    padding: 20px;
+    height: 250px;
+    overflow: scroll;
+}
+
+#submitBtn{
+    padding: 10px 20px;
+    justify-content: center;
+    background-color: #413d3d;
+    color: white;
+    border: transparent;
+    border-radius: 3px;
+}
+
+.show_cart>div{
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.shipping_details
+{   
+    padding: 20px;
+}
+
+.pricing_details{
+    padding: 20px;
+}
+
+.pricing_details>div{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+
+#text_div{
+    width: 50%;
+    line-height: 13px;
+}
+.white_space
+{
+    margin: auto;
+    background-color: whitesmoke;
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input[type=text]{
+    width: 250px;
+    height: 20px;
+}
+
+input[type=number]{
+    width: 250px;
+    height: 20px;
+}
+
+
+span{
+    margin-left: 25px;
+}
+
+.bolder
+{
+    font-size: 20px;
+}
