@@ -207,29 +207,9 @@ var product_data = {
     "all soaps":all_soaps
 }
 
-for(let i = 0;i<product_data['all soaps'].length;i++)
-{
-    product_data['all soaps'][i]['final_price'] = product_data['all soaps'][i]['Price']
-}
-
-for(let i = 0;i<product_data['foaming soaps'].length;i++)
-{
-    product_data['foaming soaps'][i]['final_price'] = product_data['foaming soaps'][i]['Price']
-}
-
-for(let i = 0;i<product_data['gel soaps'].length;i++)
-{
-    product_data['gel soaps'][i]['final_price'] = product_data['gel soaps'][i]['Price']
-}
-
-for(let i = 0;i<product_data['sanitizers'].length;i++)
-{
-    product_data['sanitizers'][i]['final_price'] = product_data['sanitizers'][i]['Price']
-}
-
-
 localStorage.setItem("products",JSON.stringify(product_data))
-let title_string = "sanitizers"
+const urlParams = new URLSearchParams(window.location.search)
+let title_string = urlParams.get("string")
 let top_p = document.querySelector("#page_title")
 top_p.textContent = "Foaming Soaps"
 let arr = product_data[title_string.toLowerCase()]

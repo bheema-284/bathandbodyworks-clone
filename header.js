@@ -1,4 +1,4 @@
-document.querySelector("button").addEventListener("click", foamingSoap);
+document.querySelector("#btn").addEventListener("click", foamingSoap);
 
 function foamingSoap() {
   window.location.href = "hand.html";

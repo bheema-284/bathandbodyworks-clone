@@ -1,7 +1,6 @@
 
 .header{
-    border: 1px solid black;
-    height: 100px;
+    height: 250px;
 }
 .main_box{
     display: grid;
@@ -51,7 +50,7 @@
     line-height: 5px;
 }
 
-img{
+.container img{
     width: 50%;
     height: 45%;
 }

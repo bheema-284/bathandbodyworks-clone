@@ -1,12 +1,11 @@
 .header{
-    border: 1px solid black;
-    height: 100px;
+    height: 200px;
 }
 
 .main_box{
     width: 80%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .nav_bar{
