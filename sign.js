@@ -4,7 +4,6 @@ var regdUsers = JSON.parse(localStorage.getItem("userDatabase"));
 function signIn() {
   var email = document.querySelector("#email").value;
   var password = document.querySelector("#password").value;
-  // window.location.href = "createAccount.html";
 
   if (email === "admin" && password === "admin") {
     window.location.href = "handsoapshome.html";

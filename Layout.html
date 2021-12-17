@@ -1,0 +1,782 @@
+<html>
+  <style>
+    #container {
+      display: grid;
+      margin-left: 1%;
+      margin-right: 1%;
+
+      grid-template-columns: repeat(auto-fit, minmax(12, 1fr));
+      grid-template-rows: 250px 600px 320px 500px 600px 600px 250px 300px 250px 150px 200px 400px;
+      grid-template-areas:
+        "A A A A A A A A A A A A "
+        "a a a a a a a a a a a a" ". b b b b b b b b b b ."
+        ". c c c c c c c c c c ." ". d d d d d d d d d d ."
+        "e e e e e e e e e e e e" "f f f f f f f f f f f f"
+        "g g g g g g g g g g g g" "h h h h h h h h h h h h"
+        "i i i i i i i i i i i i" "j j j j j j j j j j j j"
+        "k k k k k k k k k k k k";
+    }
+
+    #img1 {
+      grid-area: a;
+      border: 0ch;
+    }
+
+    #two {
+      grid-area: b;
+      background-color: grey;
+      margin-top: 2%;
+    }
+    #three {
+      grid-area: c;
+      margin-top: 3%;
+      display: flex;
+    }
+    #four {
+      grid-area: d;
+      display: flex;
+      margin-top: 8%;
+    }
+    #five {
+      grid-area: e;
+      margin-top: 8%;
+    }
+    #six {
+      grid-area: f;
+    }
+    #seven {
+      grid-area: g;
+    }
+    #eight {
+      margin-top: 10%;
+      grid-area: h;
+    }
+    #nine {
+      grid-area: i;
+    }
+    #ten {
+      grid-area: j;
+      margin-top: 10%;
+    }
+    #eleven {
+      grid-area: k;
+      display: flex;
+    }
+
+    #img2 {
+      border: 0ch;
+      margin-right: 2%;
+    }
+    #img3 {
+      border: 0ch;
+      margin-left: 2%;
+    }
+    #img4 {
+      border: 0ch;
+      margin-right: 2%;
+    }
+    #img5 {
+      border: 0ch;
+      margin-left: 2%;
+    }
+    #img6 {
+      border: 0ch;
+      margin-left: 2%;
+    }
+
+    #H1,
+    #H2,
+    #H3,
+    #H4 {
+      text-decoration-line: underline;
+    }
+
+    #nav {
+      background-color: red;
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    #nav > button {
+      height: 46%;
+      background-color: chocolate;
+      margin-top: 2%;
+      border-radius: 1%;
+      border: 1px solid black;
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+    }
+    h3 {
+      color: blue;
+    }
+
+    #BUY1 {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0px 20px;
+
+      text-align: center;
+    }
+    #A {
+      width: 15%;
+
+      border: 1px solid black;
+      padding: 0px;
+      background-color: white;
+    }
+    #B {
+      width: 15%;
+
+      border: 1px solid black;
+      padding: 0px;
+      background-color: white;
+    }
+    #C {
+      width: 15%;
+
+      border: 1px solid black;
+      padding: 0px;
+      background-color: white;
+    }
+    #D {
+      width: 15%;
+
+      border: 1px solid black;
+      padding: 0px;
+      background-color: white;
+    }
+    #shop1 {
+      background-color: black;
+      color: white;
+    }
+    #shop2 {
+      background-color: black;
+      color: white;
+    }
+    #shop3 {
+      background-color: black;
+      color: white;
+    }
+    #shop4 {
+      background-color: black;
+      color: white;
+    }
+
+    #seven {
+      width: 80%;
+      height: 40%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+    }
+    #sev {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0px 20px;
+      height: 70%;
+      text-align: center;
+    }
+    #body {
+      width: 15%;
+      height: 100%;
+      border: 0ch;
+    }
+    #all {
+      width: 15%;
+      height: 100%;
+    }
+    #wall {
+      width: 15%;
+      height: 100%;
+    }
+    #hand {
+      width: 15%;
+      height: 100%;
+    }
+    #handsa {
+      width: 15%;
+      height: 100%;
+    }
+    #gifts {
+      width: 15%;
+      height: 100%;
+    }
+
+    .hori {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+    }
+    h2 span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    #join1 {
+      margin-right: 10%;
+      margin-left: 10%;
+      border: 0ch;
+    }
+
+    #join2 {
+      margin-right: 2%;
+      margin-left: 2%;
+      border: 0ch;
+      margin-top: 1%;
+    }
+    p {
+      text-align: center;
+    }
+
+    #nine {
+      width: 80%;
+      height: 40%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 2%;
+    }
+    #nine1 {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0px 20px;
+      height: 70%;
+      text-align: center;
+    }
+    #p1 {
+      width: 15%;
+      height: 100%;
+      border: 0ch;
+      background-color: transparent;
+    }
+    #p2 {
+      width: 15%;
+      height: 100%;
+    }
+    #p3 {
+      width: 15%;
+      height: 100%;
+    }
+    #p4 {
+      width: 15%;
+      height: 100%;
+    }
+
+    .hori {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+    }
+    h2 span {
+      background: #fff;
+      padding: 0 10px;
+    }
+    p {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    input {
+      width: 150px;
+      height: 26px;
+      margin-top: 0%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .fa {
+      padding: 10px;
+      font-size: 50px;
+      width: 30px;
+      height: 20px;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 50%;
+      justify-content: space-around;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .fa-facebook {
+      background: #3b5998;
+      color: white;
+    }
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    .fa-twitter {
+      background: #55acee;
+      color: white;
+    }
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    .fa-pinterest {
+      background: #cb2027;
+      color: white;
+    }
+    #btn {
+      color: white;
+      background-color: black;
+      padding: 7px 15px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #btn:hover {
+      background-color: rgb(228, 226, 226);
+      color: black;
+      border: transparent;
+    }
+
+    #footer {
+      display: flex;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      width: 90%;
+      margin: auto;
+    }
+    #fhead {
+      text-align: left;
+      justify-content: left;
+    }
+    #info {
+      width: 30%;
+    }
+    #abtacc {
+      width: 25%;
+      margin-left: 20px;
+    }
+    #abtdis {
+      width: 25%;
+      margin-left: 20px;
+    }
+    #abtfind {
+      width: 25%;
+    }
+    #abtcust {
+      width: 25%;
+      margin-left: 20px;
+    }
+    #footanc {
+      text-decoration: none;
+      line-height: 26px;
+      color: rgb(102, 101, 101);
+    }
+    #footanc:hover {
+      color: #55acee;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <button id="img1">
+        <img
+          src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw937f9502/images/Christmas2021/fbc_hapyxmas_0_c1_hm_4.jpg?yocs=s_"
+          width="100%"
+          height="100%"
+        />
+      </button>
+
+      <div id="two">
+        <h2>TODAY'S TOP OFFERS</h2>
+
+        <div id="BUY1">
+          <div id="A">
+            <h3>ENDS TODAY!</h3>
+            <h6>All Candles</h6>
+            <h5>Buy 2,Get 2 FREE</h5>
+            <h6>lowest-priced items are free</h6>
+            <button id="shop1">SHOP</button>
+          </div>
+
+          <div id="B">
+            <h3>ENDS TODAY!</h3>
+            <h6>Select Body Care</h6>
+            <h5>Buy 3,Get 1 FREE</h5>
+            <h6>lowest-priced items are free</h6>
+            <button id="shop2">SHOP</button>
+          </div>
+
+          <div id="C">
+            <h3>ENDS TODAY!</h3>
+            <h6>Hand Soaps</h6>
+            <h5>Buy 2,Get 2 FREE</h5>
+            <h5>6$27 or 4$20</h5>
+
+            <button id="shop3">SHOP</button>
+          </div>
+
+          <div id="D">
+            <h3>ENDS TODAY!</h3>
+            <h6>Wallflowers Fragrances Refills</h6>
+            <h5>Buy 2,Get 2 FREE</h5>
+            <h5>6$27 or 4$20</h5>
+            <button id="shop4">SHOP</button>
+          </div>
+        </div>
+
+        <div id="three">
+          <button id="img2">
+            <img
+              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw523f9995/images/Christmas2021/sp_happy-xmas_0_c1_hps.jpg?yocs=o_s_"
+              width="100%"
+              height="100%"
+            />
+            <h4>Pro tip:no holiday happening should stop at risk</h4>
+            <h5 id="H1">SHOP AND SHOPS</h5>
+          </button>
+
+          <button id="img3">
+            <img
+              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw123b5377/images/Christmas2021/obc_mensv2_0_c1_hps.jpg?yocs=o_s_"
+              width="100%"
+              height="100%"
+            />
+            <h4>Be bold with the season's warmest, richest fragrances.</h4>
+            <h5 id="H2">SHOP MEN'S</h5>
+          </button>
+        </div>
+
+        <div id="four">
+          <button id="img4">
+            <img
+              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwfa4699a8/images/Christmas2021/diff_gifting_0_C1_hps.jpg?yocs=o_s_"
+              width="100%"
+              height="100%"
+            />
+            <h4>Deck the halls with always-on fragrance-fa-la-la-la-la!</h4>
+            <h5 id="H3">SHOP WALLFLOWERS</h5>
+          </button>
+          <button id="img5">
+            <img
+              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw1179eab0/images/Christmas2021/obc_aticedbot_0_c1_hps.jpg?yocs=o_s_"
+              width="100%"
+              height="100%"
+            />
+            <h4>Chill out with season's coolest aromatherapy essentials.</h4>
+            <h5 id="H4">SHOP AROMATHERPAY</h5>
+          </button>
+        </div>
+        <div id="five">
+          <button id="img6">
+            <img
+              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwae517b2d/images/Christmas2021/xcat_gift-zone_0_c1_hb_3.jpg?yocs=s_"
+              width="100%"
+              height="100%"
+            />
+          </button>
+
+          <div id="nav">
+            <button id="top">TOP GIFT</button>
+            <button id="stock">STOCKING STUFFERS</button>
+            <button id="gift">GIFT SETS</button>
+            <button id="under">GIFT UNDER$30</button>
+            <button id="her">GIFT FOR HERGIF</button>
+            <button id="him">GIFT FOR HIM</button>
+          </div>
+        </div>
+
+        <div id="seven">
+          <h2 class="hori"><span>SHOP BY CATEGORY</span></h2>
+
+          <div id="sev">
+            <div id="body">
+              <button id="bodycare">
+                <img
+                  src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw312ce855/images/Christmas2021/fbc_vbn-ffm_0_c2_vn.jpg?yocs=o_s_"
+                  width="100%"
+                  height="100%"
+                />
+                <h5>Body Care</h5>
+              </button>
+            </div>
+
+            <div id="all">
+              <button id="allcandels">
+                <img
+                  src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwcdbcdbf4/images/Christmas2021/cndl_all_0_c2_vn.jpg?yocs=o_s_"
+                  width="100%"
+                  height="100%"
+                />
+                <h5>ALL CANDELS</h5>
+              </button>
+            </div>
+
+            <div id="wall">
+              <button id="wallflowers">
+                <img
+                  src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwfa8602d4/images/Christmas2021/diff_tree_0_c1_vn.jpg?yocs=o_s_"
+                  width="100%"
+                  height="100%"
+                />
+                <h5>WALLFOLLWERS</h5>
+              </button>
+            </div>
+
+            <div id="hand">
+              <button id="handsoap">
+                <img
+                  src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw81b513e8/images/Christmas2021/sp_winter-foam_0_c2_vn.jpg?yocs=o_s_"
+                  width="100%"
+                  height="100%"
+                />
+                <h5>HAND SOAPS</h5>
+              </button>
+            </div>
+
+            <div id="handsa">
+              <button id="handsanitizer">
+                <img
+                  src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw5eb5501a/images/Christmas2021/sn_wca-pbac_0_c1_vn.jpg?yocs=o_s_"
+                  width="100%"
+                  height="100%"
+                />
+                <h5>HAND SANITIZERS</h5>
+              </button>
+            </div>
+
+            <div id="gifts">
+              <button id="giftset">
+                <img
+                  src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw87d1ff40/images/Christmas2021/g_gift-sets_0_c1_vn.jpg?yocs=o_s_"
+                  width="100%"
+                  height="100%"
+                />
+                <h5>GIFT SETS</h5>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="eight">
+          <button id="join1">
+            <img
+              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwd10aaf90/images/BOPIS/xcat_bopis_fa1_0_hb.jpg?yocs=s_"
+              width="100%"
+              height="100%"
+            />
+            <button id="join2">
+              <img
+                src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwa35f93bb/images/Fall2021/xcat_sms_0_fa2_hb_v2_5.jpg?yocs=s_"
+                width="100%"
+                height="100%"
+              />
+            </button>
+          </button>
+        </div>
+        <div id="nine">
+          <h2 class="hori"><span>@BATHANDNODYWORKS</span></h2>
+          <p>Daily inspiration.Instant happiness.Right here.</p>
+
+          <div id="nine1">
+            <div id="P1">
+              <button id="pic1">
+                <img
+                  src="https://cdn.dashhudson.com/media/640/1639512081.397119515651.jpeg"
+                  width="100%"
+                  height="100%"
+                />
+              </button>
+            </div>
+
+            <div id="p2">
+              <button id="pic2">
+                <img
+                  src="https://cdn.dashhudson.com/media/640/1639494826.047809896786.jpeg"
+                  width="100%"
+                  height="100%"
+                />
+              </button>
+            </div>
+
+            <div id="p3">
+              <button id="pic3">
+                <img
+                  src="https://cdn.dashhudson.com/media/640/1639425666.953025650682.jpeg"
+                  width="100%"
+                  height="100%"
+                />
+              </button>
+            </div>
+
+            <div id="p4">
+              <button id="pic4">
+                <img
+                  src="https://cdn.dashhudson.com/media/640/1639408557.478184274969.jpeg"
+                  width="100%"
+                  height="100%"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="ten">
+          <h2>Bath & Body Works</h2>
+          <p>
+            Bath and Body Works is your go-to place for gifts & goodies that
+            surprise & delight. From fresh fragrances to soothing skin care, we
+            make finding your perfect something special a happy-memory-making
+            experience. Searching for new seasonal creations or your favorite
+            discontinued scents? We’ve got you covered there, too. Oh! And while
+            you're browsing, shop our latest & greatest selection of lotions,
+            soaps and candles!
+          </p>
+        </div>
+
+        <hr />
+        <div id="eleven">
+          <div id="info">
+            <div id="fhead">
+              <p>Get email offers & the latest news from Bath & Body Works!</p>
+            </div>
+            <p>Enter Email</p>
+            <br />
+            <input type="text" name="" id="email1" />
+            <i class="fa fa-info-circle" style="font-size: 28px"></i>
+            <p>Confirm Email</p>
+            <br />
+            <input type="text" name="" id="email" />
+            <button id="btn">SUBMIT</button><br />
+            <p>GET CONNECTED</p>
+            <br />
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+          </div>
+          <div id="abtcust">
+            <p>COSTOMER CARE</p>
+            <a id="footanc" href="">Healp & FAQ's</a><br />
+            <a id="footanc" href="">Live Chat 8am-12pm ET</a><br />
+            <a id="footanc" href="">Shipping</a><br />
+            <a id="footanc" href="">Returns & Exchanges</a><br />
+            <a id="footanc" href="">Order Tarcking</a><br />
+            <a id="footanc" href="">Cororate Sales & Gifts</a><br />
+            <a id="footanc" href="">Cantact Us</a><br />
+          </div>
+          <div id="abtacc">
+            <p>MY ACCOUNT</p>
+            <a id="footanc" href="sign.html">SignIn or Sign UP</a><br />
+            <a id="footanc" href="">Order Tarcking</a><br />
+            <a id="footanc" href="">My Auto Refresh</a><br />
+            <a id="footanc" href="">My love-It List</a><br />
+          </div>
+          <div id="abtdis">
+            <p>DISCOVER</p>
+            <a id="footanc" href="">About</a><br />
+            <a id="footanc" v href="">careers</a><br />
+            <a id="footanc" href="">Gift Cards</a><br />
+            <a id="footanc" href="">Shop by Fragrance</a><br />
+            <a id="footanc" href="">Product ingredients</a><br />
+            <a id="footanc" href="">Get Insperied</a><br />
+          </div>
+          <div id="abtfind">
+            <p>FIND US</p>
+            <a id="footanc" href="">Store Locater</a><br />
+            <a id="footanc" href="">Global Locater</a><br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#img1").addEventListener("click", function () {
+    window.location.href = "img1.html";
+  });
+
+  document.querySelector("#img2").addEventListener("click", function () {
+    window.location.href = "img2.html";
+  });
+
+  document.querySelector("#img3").addEventListener("click", function () {
+    window.location.href = "img3.html";
+  });
+
+  document.querySelector("#img4").addEventListener("click", function () {
+    window.location.href = "img4.html";
+  });
+
+  document.querySelector("#img5").addEventListener("click", function () {
+    window.location.href = "img5.html";
+  });
+
+  document.querySelector("#img6").addEventListener("click", function () {
+    window.location.href = "img6.html";
+  });
+
+  document.querySelector("#top").addEventListener("click", function () {
+    window.location.href = "topgift.html";
+  });
+
+  document.querySelector("#stock").addEventListener("click", function () {
+    window.location.href = "stocking.html";
+  });
+
+  document.querySelector("#gift").addEventListener("click", function () {
+    window.location.href = "giftset.html";
+  });
+
+  document.querySelector("#under").addEventListener("click", function () {
+    window.location.href = "giftunder.html";
+  });
+
+  document.querySelector("#her").addEventListener("click", function () {
+    window.location.href = "gifther.html";
+  });
+
+  document.querySelector("#him").addEventListener("click", function () {
+    window.location.href = "gifthim.html";
+  });
+
+  document.querySelector("#shop1").addEventListener("click", function () {
+    window.location.href = "shop1.html";
+  });
+  document.querySelector("#shop2").addEventListener("click", function () {
+    window.location.href = "shop2.html";
+  });
+  document.querySelector("#shop3").addEventListener("click", function () {
+    window.location.href = "shop3.html";
+  });
+  document.querySelector("#shop4").addEventListener("click", function () {
+    window.location.href = "shop4.html";
+  });
+
+  document.querySelector("#bodycare").addEventListener("click", function () {
+    window.location.href = "bodycare.html";
+  });
+  document.querySelector("#allcandels").addEventListener("click", function () {
+    window.location.href = "allcandels.html";
+  });
+  document.querySelector("#wallflowers").addEventListener("click", function () {
+    window.location.href = "wallflowers.html";
+  });
+  document.querySelector("#handsoap").addEventListener("click", function () {
+    window.location.href = "handsoap.html";
+  });
+  document.querySelector("#handsa").addEventListener("click", function () {
+    window.location.href = "handsa.html";
+  });
+  document.querySelector("#giftset").addEventListener("click", function () {
+    window.location.href = "giftset.html";
+  });
+
+  document.querySelector("#pic1").addEventListener("click", function () {
+    window.location.href = "pic1.html";
+  });
+  document.querySelector("#pic2").addEventListener("click", function () {
+    window.location.href = "pic2.html";
+  });
+  document.querySelector("#pic3").addEventListener("click", function () {
+    window.location.href = "pic3.html";
+  });
+  document.querySelector("#pic4").addEventListener("click", function () {
+    window.location.href = "pic4.html";
+  });
+</script>

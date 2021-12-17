@@ -1,8 +1,14 @@
 document.querySelector("#form").addEventListener("submit", signUp);
+<<<<<<< HEAD
+var userData = JSON.parse(localStorage.getItem("userDatabase"));
+function signUp(event) {
+  event.prevetDefault();
+=======
 var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
 
 function signUp(event) {
   event.preventDefault();
+>>>>>>> 3da0ab532f3fec41e2ebd9a4453a3c44e81794fb
   var frname = document.querySelector("#inf1").value;
   var lasname = document.querySelector("#inf2").value;
   var email = document.querySelector("#inf3").value;
