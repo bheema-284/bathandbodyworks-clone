@@ -1,0 +1,71 @@
+
+.header{
+    border: 1px solid black;
+    height: 100px;
+}
+.main_box{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 2%;
+    grid-template-areas: 
+    "sb sb nb nb nb nb nb nb nb nb nb nb"
+    "sb sb con con con con con con con con con con"
+    "sb sb con con con con con con con con con con"   
+}
+
+.side_bar{
+    border: 1px solid red;
+    grid-area: sb;
+    height: auto;
+}
+
+.nav_bar{
+    grid-area: nb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav_bar>div{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.nav_bar select{
+    width: 200px;
+}
+#page_title{
+    font-size: 30px;
+}
+.container{
+    grid-area: con;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container>div{
+    text-align: center;
+}
+.container>div>div{
+    margin-top: 10px;
+    line-height: 5px;
+}
+
+img{
+    width: 50%;
+    height: 45%;
+}
+
+#submit_bag{
+    height: 50px;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    justify-content: center;
+    background-color: #413d3d;
+    color: white;
+    border: transparent;
+    border-radius: 3px;
+}
