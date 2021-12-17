@@ -1,6 +1,7 @@
-document.querySelector("#form").addEventListener("click", signUp);
-var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
-function signUp() {
+document.querySelector("#form").addEventListener("submit", signUp);
+var userData = JSON.parse(localStorage.getItem("userDatabase"));
+function signUp(event) {
+  event.prevetDefault();
   var frname = document.querySelector("#inf1").value;
   var lasname = document.querySelector("#inf2").value;
   var email = document.querySelector("#inf3").value;
@@ -18,5 +19,5 @@ function signUp() {
   };
   userData.push(userCred);
   localStorage.setItem("userDatabase", JSON.stringify(userData));
-  window.location.href = "about.html";
+  window.location.href = "sign.html";
 }
