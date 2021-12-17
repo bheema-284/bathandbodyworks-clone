@@ -10,7 +10,7 @@ function signIn() {
     window.location.href = "handsoapshome.html";
   } else {
     for (var i = 0; i < regdUsers.length; i++) {
-      if (regdUsers[i].emailAdd == email && regdUsers[i].pass == password) {
+      if (regdUsers[i].email == email && regdUsers[i].pass == password) {
         alert("Login In Successfully");
         console.log("registered user");
         window.location.href = "handsoapshome.html";
