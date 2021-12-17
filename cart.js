@@ -152,5 +152,5 @@ function deleteItem(index)
 
 
 document.querySelector("#submit_bag").addEventListener("click",function(){
-    window.location.href="shipping.html"
+    window.location.href="shipping_address.html"
 })

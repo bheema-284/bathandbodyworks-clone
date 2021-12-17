@@ -18,7 +18,12 @@
                     <p class="bolder">Enter Your Card Details</p>
                     <div>
                         <p>Card Number</p>
-                        <input type="number" id="number">
+                        <input name="somename"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type = "number"
+                            maxlength = "10"
+                            id="number"
+                        />
                     </div>
                     
                     <div>
@@ -29,12 +34,18 @@
                     <div>
                         <p>Expiry Date</p>
                         <input type="date" id="exp_date">
+
                     </div>
     
                     <div>
                         <p>Name</p>
                         <input type="text" id="name">
                     </div>
+                    <div>
+                        <p>OTP</p>
+                        <input type="number" id="OTP">
+                    </div>
+                    
                     <br>
                     <div>
                         <input type="submit" id="submitBtn" value="Pay">

@@ -211,12 +211,32 @@ localStorage.setItem("products",JSON.stringify(product_data))
 const urlParams = new URLSearchParams(window.location.search)
 let title_string = urlParams.get("string")
 let top_p = document.querySelector("#page_title")
-top_p.textContent = "Foaming Soaps"
+top_p.textContent = title_string.toLocaleUpperCase();
+let product_types = [];
+let sample_obj = {};
+for(let i = 0;i<product_data[title_string].length;i++)
+{
+    sample_obj[product_data[title_string][i]['Type']] = "present"
+}
+
+for(key in sample_obj){
+    product_types.push(key)
+}
+
+
 let arr = product_data[title_string.toLowerCase()]
 
 
 displayProds(arr)
 
+// Displaying data into dropdown menus.
+product_types.map(function(elem){
+    let select = document.querySelector("#product_type");
+    let option = document.createElement("option")
+    option.value = elem
+    option.text = elem
+    select.append(option)
+})
 
 arr.map(function(elem)
 {
@@ -238,6 +258,21 @@ function filter_prods()
     let filter_arr = arr.filter(function(elem)
     {
         return elem['Name'] == filter_value
+    })
+    displayProds(filter_arr)
+}
+
+function filter_prods_type()
+{
+    let filter_value = document.querySelector("#product_type").value;
+    if(filter_value == "all")
+    {
+        displayProds(arr)
+        return
+    }
+    let filter_arr = arr.filter(function(elem)
+    {
+        return elem['Type'] == filter_value
     })
     displayProds(filter_arr)
 }

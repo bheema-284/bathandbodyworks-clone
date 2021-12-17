@@ -34,14 +34,16 @@
 }
 
 .show_cart img{
-    width: 50%;
-    height: 60%;
+    width: 40%;
+    height: 55%;
 }
 
 .show_cart{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2%;
+    overflow: scroll;
+    height: 300px;
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;

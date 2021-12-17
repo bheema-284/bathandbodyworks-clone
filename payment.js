@@ -8,7 +8,7 @@ cart_arr.map(function(elem){
 })
 document.querySelector("#sub_total").textContent = "$"+total;
 document.querySelector("#total").textContent = "$"+Number(total+4.5+5.25);
-document.querySelector("#shipping_type").textContent = shipping_details[0]['shipping_method']
+document.querySelector("#shipping_type").textContent = shipping_details['shipping_method']
 
 // Calling the functions to display cart and shipping details.
 displayCart(cart_arr)
@@ -57,19 +57,17 @@ function displayCart(arr)
 }
 
 
-function displayShipping(arr)
+function displayShipping(elem)
 {   
     shipping_arr = document.querySelector(".shipping_details")
-    arr.map(function(elem){
-        var name = document.createElement("p");
-        name.textContent = "Name: "+elem['first_name']+" "+elem['last_name']
-        var address = document.createElement("p");
-        address.textContent = "Address: "+elem['Address1']+" "+elem['Address2']+" "+elem['state']+"/"+elem['country']
-        var shipping_method = document.createElement("p")
-        shipping_method.textContent = "Order will be delievered by "+elem['shipping_method']+" services"
+    var name = document.createElement("p");
+    name.textContent = "Name: "+elem['first_name']+" "+elem['last_name']
+    var address = document.createElement("p");
+    address.textContent = "Address: "+elem['Address1']+" "+elem['Address2']+" "+elem['state']+"/"+elem['country']
+    var shipping_method = document.createElement("p")
+    shipping_method.textContent = "Order will be delievered by "+elem['shipping_method']+" services"
 
-        shipping_arr.append(name,address,shipping_method)
-    })
+    shipping_arr.append(name,address,shipping_method)
 }
 
 
@@ -85,7 +83,12 @@ function payFunction(event)
         "exp_date":form.exp_date.value,
         "name":form.name.value
     }
-
-    localStorage.setItem("card_details",JSON.stringify(obj))
-    window.location.href="thankYou.html";
+    if(document.querySelector("#OTP").value == "1551")
+    {
+        localStorage.setItem("card_details",JSON.stringify(obj))
+        window.location.href="thankYou.html";
+    }
+    else{
+        window.alert("Wrong OTP entered!")
+    }
 }

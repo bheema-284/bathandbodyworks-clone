@@ -1,19 +1,13 @@
 .header{
-    height: 100px;
     text-align: center;
 }
 
 .main_box{
     display: flex;
     margin:auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-.main_box>div:nth-child(2)
-{
-    width: 25%;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 .submit_form
 {
     display: grid;
@@ -24,13 +18,16 @@
 }
 
 .show_cart img{
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
 }
 
 .show_cart{
-    padding: 20px;
-    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 25%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 300px;
     overflow: scroll;
 }
 
@@ -42,7 +39,6 @@
     border: transparent;
     border-radius: 3px;
 }
-
 .show_cart>div{
     display: flex;
     margin-bottom: 20px;
@@ -50,20 +46,6 @@
     justify-content: space-between;
 }
 
-.shipping_details
-{   
-    padding: 20px;
-}
-
-.pricing_details{
-    padding: 20px;
-}
-
-.pricing_details>div{
-    display: flex;
-    font-size: 14px;
-    justify-content: space-between;
-}
 
 
 #text_div{
@@ -78,7 +60,6 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 input[type=text]{
     width: 250px;
     height: 20px;
@@ -93,7 +74,15 @@ input[type=number]{
 span{
     margin-left: 25px;
 }
-
+.radio_buttons{
+    width: 100%;
+}
+.radio_buttons>div{
+    font-size: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
 .bolder
 {
     font-size: 20px;

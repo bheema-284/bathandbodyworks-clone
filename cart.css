@@ -67,8 +67,10 @@
 .display_cart{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 5%;
+    grid-gap: 2%;
     margin-top: 30px;
+    margin-bottom: 30px;
+    overflow:scroll;
     padding: 2%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -79,7 +81,8 @@
 }
 
 img{
-    width: 20%;
+    width: 10%;
+    height: 60%;
 }
 
 button{
