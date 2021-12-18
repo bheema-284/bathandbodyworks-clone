@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Moisturizers</title>
+    <style>
+        
+        #container{
+                width:1500px;
+                display: flex;
+            }
+            #leftmenu{
+                width:200px;
+                height:900px;
+                padding-left: 50px;
+            }
+            #productdisplay{
+                width:1200px;
+                margin-left: 50px;
+            }
+            #product{
+                width:1200px;
+                display: grid;
+                grid-template-columns: repeat(4, 260px);
+                grid-template-rows: repeat(4, 550px);
+                justify-content: space-between;
+                margin-top: 50px;
+            }
+            #product>div{
+                width:260px;
+                height:550px;
+                text-align: center;
+            }
+            #new{
+                line-height: 0px;
+                color:blue;
+                font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+                font-style: italic;
+                font-weight: bold;
+            }
+            #pname{
+                line-height: 0px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            #desc{
+                line-height: 0px;
+                color:gray;
+            }
+            #price{
+                /* line-height: 0px; */
+                font-size: 20px;
+                font-weight: bold;
+            }
+            #offer{
+                line-height: 0px;
+                color:red;
+                font-size: 12px;
+            }
+            #btn{
+                color:white;
+                background-color: #333333;
+                font-weight: bold;;
+                width:260px;
+                height:40px;
+                border:none;
+                cursor: pointer;
+            }
+            #btn:hover{
+                color:black;
+                background-color: #e2e2e0;
+            }
+            #text{
+                font-size: 17px;
+                line-height: 30px;
+                color:rgb(145, 143, 143);
+                width:800px
+            }
+            #title{
+                font-family: Trade Gothic W01 Light,Arial,sans-serif;
+                font-size: 22px;
+            }
+            #shop{
+                color:rgb(6, 6, 179);
+            }
+            #menu{
+                font-family: Trade Gothic W01 Bold_2,Arial,sans-serif;
+            }
+            #menutext{
+                color:rgb(158, 157, 157);
+                font-family: sans-serif;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        
+    </style>
+</head>
+
+    <body>
+        <div id="container">
+            <!-- these div for left side menu  -->
+            <div id="leftmenu">
+                 <!-- section of top offers -->
+                 <h5 id="menu">TOP OFFERS</h5>
+                 <p id="menutext">Buy 3, Get 1 Free Select Body Care<br><br>Buy 2, Get 1 Free Travel, Hand &amp; Lip Care</p><br>
+                 <!-- section of FEATURED items -->
+                 <h5 id="menu">FEATURED</h5>
+                 <p id="menutext">New Body care <br><br> Customer Favourite <br><br> Retired Fragrance <br><br> Travelsize</p><br>
+                 <!-- section for bath & shower -->
+                 <h5 id="menu">BATH &amp; SHOWER</h5>
+                 <p id="menutext">All Bath And Shower <br><br> Body Wash &amp; Shower Gel <br><br> Bath assesories </p><br>
+                 <!-- section for moisturizers -->
+                 <h5 id="menu">MOISTURIZER</h5>
+                 <p id="menutext">All Moisturizer<br><br> Body Lotion <br><br> Body Cream <br><br> Hand Cream<br><br> Lip Gloss &amp; Balm</p><br>
+                 <!-- section of fregrance -->
+                 <h5 id="menu">FREGRANCE</h5>
+                 <p id="menutext">All Fragrance <br><br> Body Sprays And Mist <br><br> Perfume And Cologne </p><br>
+                 <!-- section of aromatheropy -->
+                 <h5 id="menu">AROMATHEROPY</h5>
+                 <p id="menutext">All Aromatheropy <br><br> Body Wash &amp; Shower Gel<br><br> Moisturizers <br><br> Mist &amp; Sprays</p><br>
+                 <!-- section of mens -->
+                 <h5 id="menu">MEN'S</h5>
+                 <p id="menutext">All Men's <br><br>Body Wash &amp; Shower Gel<br><br> Moisturizers <br><br> Body Sprays &amp; Cologne</p><br>
+                 <!-- gift set section -->
+                 <h5 id="menu">GIFT SET</h5>
+                 <p id="menutext"> Body Care Gift Sets  </p>
+            </div>
+            <!-- these div for right side bath & shower product display -->
+            <div id="productdisplay">
+                <p id="title">All Skin &amp; Body Moisturizers</p>
+                <hr>
+                <p><span id="shop">SHOP YOUR STORE:</span>Set Store</p>
+                <hr>
+                <!-- these div for products -->
+                <div id="product">
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwce73973f/crop/026311425_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New Fragrance</p>
+                        <p id="pname">Pure Wonder</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3e55e673/crop/026353994_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New Fragrance</p>
+                        <p id="pname">Pure Wonder</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$15.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwddbaf67c/crop/026311427_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple New</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$15.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                   
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw459dddc8/crop/026311429_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Snowdlakes &amp; Cashmere</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7cf10dc1/crop/026353995_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Vanilla Bean Noe</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$13.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0a0a327f/crop/026359403_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Noir</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$15.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwaef70361/crop/026353998_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfd9bfc9f/crop/026359402_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Berry Wonder</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$16.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7c0e0582/crop/026353999_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New Fragrance</p>
+                        <p id="pname">Eukalyptus Levender</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$15.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw61620f7a/crop/026359406_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Snowflakes &amp; Cashmere</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$16.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcdb6e3e6/crop/026359407_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Body Butter</p>
+                        <p id="price">$18.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfc54be5f/hires/026311431_alt_1.jpg?sh=413&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New Fragrance</p>
+                        <p id="pname">Cotton Candy Campaigne</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$13.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0768f3d7/crop/026353309_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">Online Wxclusive</p>
+                        <p id="pname">Christmus Cookies</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$15.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb31027b2/crop/026281129_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New Fragrance</p>
+                        <p id="pname">Star Light Night</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$15.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ac/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw07c07f6c/crop/026355871_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Frosted Coconut Snowball</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$13.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw54ddb4a2/crop/026281138_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New Fragrance</p>
+                        <p id="pname">Winter Peach Marshmallow</p>
+                        <p id="desc">unlimited Hydration Body Cream</p>
+                        <p id="price">$15.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw581d87ac/crop/026299194_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw36595c62/hires/026281144_alt_1.jpg?sh=413&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc6262222/crop/026177563_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw04bd9233/crop/026199991_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8921fd18/crop/026235152_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc94aacfd/crop/026123826_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf5a5d9e7/crop/026211655_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw65c687f7/crop/026199993_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf13c41e4/crop/026054749_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdf767cf4/crop/026300529_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9780e832/crop/026270017_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa2489ef3/crop/026282783_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dweb11de04/crop/026282785_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9b35c92b/crop/026199997_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb4fda98d/crop/026311435_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7d9d9411/crop/026091431_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9e3ab294/crop/026300533_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcadbe5d2/crop/026172264_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7ecfe420/crop/026098883_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwabe0996c/crop/024651125_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3c312f81/crop/026169881_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwce16f21a/crop/026353310_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                    <div>
+                        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.1ad/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb141a3f4/crop/023987224_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" width="140px" height="300px">
+                        <p id="new">New!</p>
+                        <p id="pname">Winter Candy Apple</p>
+                        <p id="desc">Super Smooth Body Lotion</p>
+                        <p id="price">$17.50</p>
+                        <p id="offer">Mix &amp; Match: Buy 3, Get 1 Free</p>
+                        <button id="btn">ADD TO BAG</button>
+                    </div>
+                   
+
+
+                </div>
+                <br><br>
+                <hr>
+                <h2>All Moisturizers from Bath &amp; Body Works</h2>
+                <div id="text">
+                    <p>We’re obsessed with the feeling of soft, touchable skin and there are plenty of ways to achieve it. Our personal favorite? Moisturizers!<br><br>
+
+                        First, take a peek at our most-loved body lotion — it’s made with shea butter, vitamin E and coconut oil, which leaves your skin nourished. If you’re looking for the ultimate hydration, our body cream with hyaluronic acid and shea butter has to be on your list. Its rich, luxe texture leaves your skin feeling soft, smooth and replenished.<br><br>
+                        
+                        Once you’ve picked whichever body care essential is right for you, the fun part’s about to begin: picking fragrances! Shop every type of scent — from sweet and fruity to woodsy and clean — there’s something out there you’ll love. Plus, we’re always adding new, seasonal fragrances…so don’t miss out on any once-in-a-lifetime scents.</p>
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+</html>
+
+<script>
+    document.querySelector("#frag").addEventListener("click" , function () {
+        window.location.href = "fragrance.html";
+    });
+  
+    document.querySelector("#mois").addEventListener("click" , function () {
+        window.location.href = "moisture.html";
+    });
+  
+    document.querySelector("#shower").addEventListener("click" , function () {
+        window.location.href = "bath_and_shower.html";
+    });
+  
+    document.querySelector("#aroma").addEventListener("click" , function () {
+        window.location.href = "Aromatatheropy.html";
+    });
+  
+    document.querySelector(".aromabig").addEventListener("click" , function () {
+        window.location.href = "Aromatatheropy.html";
+    });
+  
+    document.querySelector("#mens").addEventListener("click" , function () {
+        window.location.href = "mens_collection.html";
+    });
+  
+    document.querySelector("#newbodycare").addEventListener("click" , function () {
+        window.location.href = "new_arrival.html";
+    });
+  
+      document.querySelector("#menutext1").addEventListener("click" , function () {
+        window.location.href = "fragrance.html";
+    });
+  
+    document.querySelector("#menutext2").addEventListener("click" , function () {
+        window.location.href = "moisture.html";
+    });
+  
+    document.querySelector("#menutext3").addEventListener("click" , function () {
+        window.location.href = "bath_and_shower.html";
+    });
+  
+    document.querySelector("#menutext4").addEventListener("click" , function () {
+        window.location.href = "moisture.html";
+    });
+  
+    document.querySelector("#menutext4").addEventListener("click" , function () {
+        window.location.href = "fragrance.html";
+    });
+    document.querySelector("#menutext5").addEventListener("click" , function () {
+        window.location.href = "fragrance.html";
+    });
+    document.querySelector("#menutext6").addEventListener("click" , function () {
+        window.location.href = "Aromatatheropy.html";
+    });
+    document.querySelector("#menutext7").addEventListener("click" , function () {
+        window.location.href = "mens_collection.html";
+    });
+    document.querySelector("#menutext8").addEventListener("click" , function () {
+        window.location.href = "candles.html";
+    });
+  
+  
+  
+      </script>
