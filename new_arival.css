@@ -1,0 +1,87 @@
+#container{
+    width:1500px;
+    display: flex;
+}
+#leftmenu{
+    width:200px;
+    height:900px;
+    padding-left: 50px;
+}
+#productdisplay{
+    width:1200px;
+    margin-left: 50px;
+}
+#product{
+    width:1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: repeat(4, 550px);
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#product>div{
+    width:260px;
+    height:550px;
+    text-align: center;
+}
+#new{
+    line-height: 0px;
+    color:blue;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+#pname{
+    line-height: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#desc{
+    line-height: 0px;
+    color:gray;
+}
+#price{
+    /* line-height: 0px; */
+    font-size: 20px;
+    font-weight: bold;
+}
+#offer{
+    line-height: 15px;
+    color:red;
+    font-size: 12px;
+}
+#btn{
+    color:white;
+    background-color: #333333;
+    font-weight: bold;;
+    width:260px;
+    height:40px;
+    border:none;
+    cursor: pointer;
+}
+#btn:hover{
+    color:black;
+    background-color: #e2e2e0;
+}
+#text{
+    font-size: 17px;
+    line-height: 30px;
+    color:rgb(145, 143, 143);
+    width:800px
+}
+#title{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size: 22px;
+}
+#shop{
+    color:rgb(6, 6, 179);
+}
+#menu{
+    font-family: Trade Gothic W01 Bold_2,Arial,sans-serif;
+}
+#menutext{
+    color:rgb(158, 157, 157);
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}

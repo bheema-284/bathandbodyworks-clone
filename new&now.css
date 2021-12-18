@@ -1,0 +1,41 @@
+#container{
+    width:1500px;
+    display: flex;
+}
+#leftmenu{
+    width:200px;
+    height:900px;
+    padding-left: 50px;
+} 
+#mainbody{
+    width:1200px;
+    margin-left: 50px;
+}
+
+#lowertext{
+    font-size: 17px;
+    line-height: 30px;
+    color:rgb(145, 143, 143)
+}
+#lowerbox{
+    width:800px;
+
+}
+img{
+    cursor:pointer;
+}
+h2{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-weight: 400;
+}
+/* these style for text shop by category on a horixontal line */
+
+#menu{
+    font-family: Trade Gothic W01 Bold_2,Arial,sans-serif;
+}
+#menutext{
+    color:rgb(158, 157, 157);
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
