@@ -14,12 +14,12 @@ document.querySelector("#aromatheropy").addEventListener("click" , function () {
     window.location.href = "aromatheropy.html";
 });
 
-document.querySelector(".newbodycare").addEventListener("click" , function () {
+document.querySelector("#newbodycare").addEventListener("click" , function () {
     window.location.href = "aromatheropy.html";
 });
 
 document.querySelector("#aroma").addEventListener("click" , function () {
-    window.location.href = "aromatheropy";
+    window.location.href = "aromatheropy.html";
 });
 
 document.querySelector("#mens").addEventListener("click" , function () {
