@@ -1,29 +1,29 @@
-document.querySelector("#frag").addEventListener("click" , function () {
+document.querySelector("#fragrance").addEventListener("click" , function () {
     window.location.href = "fregrance.html";
 });
 
-document.querySelector("#mois").addEventListener("click" , function () {
+document.querySelector("#moisturizer").addEventListener("click" , function () {
     window.location.href = "moisturizer.html";
 });
 
-document.querySelector("#shower").addEventListener("click" , function () {
+document.querySelector("#bath").addEventListener("click" , function () {
     window.location.href = "bath_and_shower.html";
 });
 
-document.querySelector("#aroma").addEventListener("click" , function () {
+document.querySelector("#aromatheropy").addEventListener("click" , function () {
     window.location.href = "aromatheropy.html";
 });
 
-document.querySelector(".aromabig").addEventListener("click" , function () {
+document.querySelector(".newbodycare").addEventListener("click" , function () {
     window.location.href = "aromatheropy.html";
+});
+
+document.querySelector("#aroma").addEventListener("click" , function () {
+    window.location.href = "aromatheropy";
 });
 
 document.querySelector("#mens").addEventListener("click" , function () {
     window.location.href = "mens_collection.html";
-});
-
-document.querySelector("#newbodycare").addEventListener("click" , function () {
-    window.location.href = "new_arrival.html";
 });
 
 document.querySelector(".menutext1").addEventListener("click" , function () {
