@@ -40,7 +40,7 @@ We were six members in team:
 # 5. Quick Start
 1. Open a folder where you want to clone the repo
 2. Do git bash here
-3. Add command git clone https://github.com/bheema-284/project-clone
+3. Add command git clone https://github.com/bheema-284/bathandbodyworks-clone
 4. The repository folder is cloned
 5. Open in VS Code
 6. Open homepage > index.html with live server on your local system 
