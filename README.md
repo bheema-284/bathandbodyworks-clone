@@ -33,9 +33,9 @@ We were six members in team:
 1. Bheemudu Guguloth	
 2. Yash Sakalley
 3. Somashekar S R
-4. Amandeep Awasthi
+4. Avinash Kumar
 5. Abhishek Vasant Satpute
-6. Avinash
+6. Amandeep Awasthi
 
 # 5. Quick Start
 1. Open a folder where you want to clone the repo
